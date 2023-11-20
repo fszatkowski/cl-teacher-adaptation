@@ -28,7 +28,7 @@ def test_bic_exemplars_per_class():
 
 def test_bic_with_warmup():
     args_line = FAST_LOCAL_TEST_ARGS
-    args_line += " --warmup-nepochs 5"
-    args_line += " --warmup-lr-factor 0.5"
+    args_line += " --wu-nepochs 5"
+    args_line += " --wu-lr 0.01"
     args_line += " --num-exemplars 200"
     run_main_and_assert(args_line)
